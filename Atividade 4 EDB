@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char t = 'A';
+    char*s=&t;
+    char**r=&s;
+    char***q=&r;
+    char****p=&q;
+
+    printf("Variavel T = %c | Ponteiro S = %c | Ponteiro R = %c | Ponteiro Q = %c | Ponteiro P = %c",t,*s,**r,***q,****p);
+}
